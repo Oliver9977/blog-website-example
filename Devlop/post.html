@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8" />
+    <!-- <link rel="stylesheet" href="./assets/css/style.css"> -->
+    <meta content="width=device-width, initial-scale=1, maximim-scale=1" name="viewport" />
+    <title>Example Blog Post</title>
+
+    <style>
+        header {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr 2fr 1fr 1fr;
+            grid-template-areas:
+                "cont cont ab"
+                "cont cont ar"
+                "cont cont els"
+                "cont cont .";
+        }
+
+
+        .box {
+            display: block;
+            /* align-items: center; */
+            /* justify-content: center; */
+            padding: 20px;
+            border: 5px solid #DCDCDC;
+            margin: 10px;
+            min-height: 180px;
+        }
+
+
+        .content {
+            grid-area: cont;
+        }
+
+        .content h1 {
+            margin-bottom: -10px;
+        }
+
+        .content h2 {
+            margin-bottom: -10px;
+        }
+
+        .content .maintitle {
+            margin-top: -10px;
+            font-size: 230%;
+        }
+
+        .content hr {
+            color: #DCDCDC;
+        }
+
+        .content .textbox {
+            border: 2px solid #DCDCDC;
+        }
+
+        .content .textbox p {
+            margin-top: 0px;
+        }
+
+        .content .codeblock {
+            margin: auto;
+            border: 2px solid #DCDCDC;
+        }
+        .content .inline-div{
+            display: flex;
+        }
+        .content .inline-div div{
+            border: 2px solid #DCDCDC;
+            margin: 20px;
+            padding: 10px;
+            border-radius: 20px;
+        }
+        .content .inline-div #older{
+            border-color: skyblue;
+        }
+
+        .about {
+            grid-area: ab;
+            background-color: #DCDCDC;
+        }
+
+        .about p {
+            font-size: larger;
+        }
+
+        .archives {
+            grid-area: ar;
+        }
+
+        .elsewhere {
+            grid-area: els;
+        }
+
+        footer {
+            background-color: #DCDCDC;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h4><a href="#"> Subscribe </a></h4>
+        <h1><u>Blog Title</u></h1>
+        <h4> 🔍 </h4>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="content box">
+                <h1 class="maintitle"> Sample blog post</h1>
+                <p class="subtitle"> January 1, 2014 by <a href="#"> Mark </a></p>
+                <p>
+                    This blog post shows a few different type of content that's sipported and styled with Bootstrap.
+                    Basic typography, images, and code are all supported.
+                </p>
+
+                <hr>
+
+                <p>
+                    Lorem Ipsum is simply dummy text of the <a href="#">printing and typesetting industry</a>. Lorem
+                    Ipsum has been the industry's standard dummy text
+                    ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type
+                    specimen book.It has survived not only five centuries, but also the leap into electronic
+                    typesetting, remaining essentially unchanged.
+
+                </p>
+
+                <div class="textbox">
+                    <p>It was popularised in the 1960s with the release of <b>Letraset sheets</b> containing Lorem Ipsum
+                        passages, and more recently with desktop publishing software like Aldus PageMaker including
+                        versions of Lorem Ipsum.
+                    </p>
+                </div>
+
+                <p>
+                    Contrary to popular belief, Lorem Ipsum is not simply random text.
+                    It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.
+                    Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the
+                    more obscure Latin words,consectetur, from a Lorem Ipsum passage, and going through the cites of the
+                    word in classical literature, discovered the undoubtable source.
+                </p>
+
+                <h1> Why do we use it? </h1>
+                <p>
+                    It is a long established fact that a reader will be distracted by the readable content of a page
+                    when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal
+                    distribution of letters,as opposed to using 'Content here, content here', making it look like
+                    readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their
+                    default model text, and a search for 'lorem ipsum' will uncover many web sites still in their
+                    infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose
+                    (injected humour and the like).
+                </p>
+
+                <h2>1914 translation by H. Rackham</h2>
+                <p> This is the first line of the translation messages. </p>
+                <div class="codeblock">This is the code block</div>
+
+                <p>
+                    But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was
+                    born and I will give you a complete account of the system, and expound the actual teachings of the
+                    great explorer of the truth,the master-builder of human happiness. No one rejects, dislikes, or
+                    avoids pleasure itself, because it is pleasure,but because those who do not know how to pursue
+                    pleasure rationally encounter consequences that are extremely painful.
+                </p>
+
+                <h2>Sub-heading</h2>
+
+                <p> This is the long long long long paragraph at the begining of the <b>unordered list</b>. </p>
+                <ul>
+                    <li>This is the first unordered list item.</li>
+                    <li>This is the second unordered list item.</li>
+                    <li>This is the third unordered list item.</li>
+                </ul>
+
+                <p> This is the long long long long paragrah at the beginning of the <b>ordered list</b>. </p>
+                <ol>
+                    <li>This is the first ordered list item.</li>
+                    <li>This is the second ordered list item.</li>
+                    <li>This is the third ordered list item.</li>
+                </ol>
+
+                <div class="inline-div">
+                    <div class="button" id="older"> Older Post </div>
+                    <div class="button" id="newer"> Newer Post </div>
+                </div>
+
+
+            </div>
+
+            <div class="about box">
+                <h1><i> About </i></h1>
+                <p> This is the about message of this website. And this message can be really really really long long
+                    long.</p>
+            </div>
+
+            <div class="archives box">
+                <h1><i> Archives </i></h1>
+                <p><a href="#"> March 2014 </a></p>
+                <p><a href="#"> Ferbruary 2014 </a></p>
+                <p><a href="#"> January 2014 </a></p>
+                <p><a href="#"> December 2013 </a></p>
+                <p><a href="#"> November 2013 </a></p>
+                <p><a href="#"> October 2013 </a></p>
+                <p><a href="#"> September 2013 </a></p>
+
+            </div>
+
+            <div class="elsewhere box">
+                <h1><i> Elsewhere </i></h1>
+                <p><a href="#"> Github </a></p>
+                <p><a href="#"> Twitter </a></p>
+                <p><a href="#"> Facebook </a></p>
+            </div>
+
+        </div>
+    </main>
+
+    <footer>
+        <h2>Made by Oliver ❤️</h2>
+        <p>
+            &copy; 2020 This is my website company
+        </p>
+    </footer>
+
+
+</body>
+
+</html>
