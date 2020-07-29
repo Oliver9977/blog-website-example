@@ -1,0 +1,48 @@
+.content {
+    grid-area: cont;
+}
+
+.content h1 {
+    margin-bottom: -10px;
+}
+
+.content h2 {
+    margin-bottom: -10px;
+}
+
+.content .maintitle {
+    margin-top: -10px;
+    font-size: 230%;
+}
+
+.content hr {
+    color: #DCDCDC;
+}
+
+.content .textbox {
+    border: 2px solid #DCDCDC;
+}
+
+.content .textbox p {
+    margin-top: 0px;
+}
+
+.content .codeblock {
+    margin: auto;
+    border: 2px solid #DCDCDC;
+}
+
+.content .inline-div {
+    display: flex;
+}
+
+.content .inline-div div {
+    border: 2px solid #DCDCDC;
+    margin: 20px;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.content .inline-div #older {
+    border-color: skyblue;
+}

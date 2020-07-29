@@ -1,0 +1,14 @@
+@media screen and (max-width: 1000px) {
+    .about {
+        display: none;
+    }
+    .archives {
+        display: none;
+    }
+    .elsewhere {
+        display: none;
+    }
+    .testimage {
+        display: none;
+    }
+}
